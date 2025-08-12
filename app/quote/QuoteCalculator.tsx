@@ -10,7 +10,12 @@ export default function QuoteCalculator() {
     destination: ''
   });
   
-  const [results, setResults] = useState(null);
+  const [results, setResults] = useState<{
+    shippingCost: string;
+    serviceFee: string;
+    total: string;
+    deliveryTime: string;
+  } | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
   const countries = [
@@ -19,7 +24,7 @@ export default function QuoteCalculator() {
     'Mexico', 'Italy', 'Spain', 'Netherlands', 'Sweden', 'Norway'
   ];
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,

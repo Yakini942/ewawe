@@ -1,4 +1,4 @@
-// File: C:\Users\ybeni\OneDrive\Documents\ewawe\app\faqs\page.tsx
+// File: C:\Users\ybeni\OneDrive\Documents\Adobe\ewawe\app\faqs\page.tsx
 import * as entry from '../../../../app/faqs/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

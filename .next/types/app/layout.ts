@@ -1,4 +1,4 @@
-// File: C:\Users\ybeni\OneDrive\Documents\ewawe\app\layout.tsx
+// File: C:\Users\ybeni\OneDrive\Documents\Adobe\ewawe\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
