@@ -24,9 +24,20 @@ module.exports = {
       spacing: {
         'typography': 'clamp(1.5rem, 3vw, 2.5rem)',
         'section': 'clamp(3rem, 6vw, 5rem)',
+      },
+      keyframes: {
+      fadeIn: {
+        '0%': { opacity: 0 },
+        '100%': { opacity: 1 },
       }
+
+    },
+    animation: {
+      fadeIn: 'fadeIn 1s ease-in',
+    }
     },
   },
   plugins: [],
 }
+
 

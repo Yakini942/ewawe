@@ -329,3 +329,4 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 - **Secondary text on light background:** 5.1:1 ✅
 
 All ratios meet WCAG AA standards (4.5:1 for normal text, 3:1 for large text).
+

@@ -3,34 +3,27 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-type HeroSectionProps = {
-  hero: any;
-};
+const heroImages = [
+  'https://images.unsplash.com/photo-1590608897129-79db0f9e3d36?auto=format&fit=crop&w=1350&q=80', // cargo ship
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80', // sea/ocean
+  'https://images.unsplash.com/photo-1602524810005-92f0f1c78f7a?auto=format&fit=crop&w=1350&q=80', // shipping containers
+];
 
-export default function HeroSection({ hero }: HeroSectionProps) {
-  // Safely extract image URLs or fallback to []
-  const heroImages =
-    hero?.heroImages?.data?.map(
-      (img: any) =>
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}${img?.attributes?.url || ''}`
-    ) || [];
-
+export default function HeroSection() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    if (heroImages.length > 1) {
-      const timer = setInterval(() => {
-        setCurrent((prev) => (prev + 1) % heroImages.length);
-      }, 5000);
-      return () => clearInterval(timer);
-    }
-  }, [heroImages.length]);
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 overflow-hidden">
-      {/* Background Slideshow */}
+      {/* Background slideshow */}
       <div className="absolute inset-0">
-        {heroImages.map((src: string, index: number) => (
+        {heroImages.map((src, index) => (
           <img
             key={index}
             src={src}
@@ -48,13 +41,12 @@ export default function HeroSection({ hero }: HeroSectionProps) {
           {/* Left Content */}
           <div className="space-y-8 text-left z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              {hero?.title || 'Your Title Here'}
+              Ship Your Favorite Products Worldwide
             </h1>
             <p className="text-xl md:text-2xl text-blue-600 font-medium">
-              {hero?.subtitle || 'Your subtitle goes here'}
+              Fast, Affordable, Secure
             </p>
-
-            {/* Quote Input */}
+            
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
@@ -72,8 +64,8 @@ export default function HeroSection({ hero }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Optional right column */}
-          <div className="relative z-10">{/* Empty for now */}</div>
+          {/* Optional Right Image */}
+          <div className="relative z-10" />
         </div>
       </div>
     </section>
