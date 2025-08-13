@@ -8,19 +8,22 @@ type HeroSectionProps = {
 };
 
 export default function HeroSection({ hero }: HeroSectionProps) {
-  // Extract multiple image URLs
-  const heroImages = hero?.heroImages?.data?.map(
-    (img: any) => `${process.env.NEXT_PUBLIC_STRAPI_URL}${img.attributes.url}`
-  ) || [];
+  // Safely extract image URLs or fallback to []
+  const heroImages =
+    hero?.heroImages?.data?.map(
+      (img: any) =>
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}${img?.attributes?.url || ''}`
+    ) || [];
 
   const [current, setCurrent] = useState(0);
 
-  // Auto change every 5s
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    if (heroImages.length > 1) {
+      const timer = setInterval(() => {
+        setCurrent((prev) => (prev + 1) % heroImages.length);
+      }, 5000);
+      return () => clearInterval(timer);
+    }
   }, [heroImages.length]);
 
   return (
@@ -45,10 +48,10 @@ export default function HeroSection({ hero }: HeroSectionProps) {
           {/* Left Content */}
           <div className="space-y-8 text-left z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              {hero?.title}
+              {hero?.title || 'Your Title Here'}
             </h1>
             <p className="text-xl md:text-2xl text-blue-600 font-medium">
-              {hero?.subtitle}
+              {hero?.subtitle || 'Your subtitle goes here'}
             </p>
 
             {/* Quote Input */}
@@ -69,10 +72,8 @@ export default function HeroSection({ hero }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Right Image - Optional: remove if background slideshow is enough */}
-          <div className="relative z-10">
-            {/* Can keep a static image or remove */}
-          </div>
+          {/* Optional right column */}
+          <div className="relative z-10">{/* Empty for now */}</div>
         </div>
       </div>
     </section>
