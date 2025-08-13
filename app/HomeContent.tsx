@@ -100,7 +100,7 @@ export default function HomeContent({ hero, testimonials }: HomeContentProps) {
       </nav>
 
       {/* Hero Section */}
-      <HeroSection hero={hero} />
+      <HeroSection/>
 
       {/* Introduction Section */}
       <section className="py-20 bg-white">
@@ -265,7 +265,7 @@ export default function HomeContent({ hero, testimonials }: HomeContentProps) {
         </div>
       </section>
 
-      <Testimonials testimonials={testimonials} />
+      <Testimonials/>
 
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-sky-400 to-blue-600 relative overflow-hidden">
