@@ -49,7 +49,7 @@ export default function ContactInfo() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">WhatsApp</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">(+250) 787 942 486</p>
                   <p className="text-sm text-gray-500">24/7 Instant Support</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function ContactInfo() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-red-800">Emergency Support</h3>
-                <p className="text-red-700">For urgent shipping issues: +1 (555) 911-SHIP</p>
+                <p className="text-red-700">For urgent shipping issues: (+250) 787 942 486</p>
                 <p className="text-sm text-red-600">Available 24/7 for critical shipments</p>
               </div>
             </div>

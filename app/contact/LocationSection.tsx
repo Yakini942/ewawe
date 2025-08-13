@@ -37,10 +37,10 @@ export default function LocationSection() {
               </div>
               <div className="space-y-4">
                 <div>
-                  <p className="text-lg font-semibold text-gray-900">Ewawe Global Shipping</p>
-                  <p className="text-gray-600">123 Logistics Avenue</p>
-                  <p className="text-gray-600">New York, NY 10001</p>
-                  <p className="text-gray-600">United States</p>
+                  <p className="text-lg font-semibold text-gray-900">Ewawe Shipping Limited</p>
+                  <p className="text-gray-600">KN 72 street kigali Rwanda</p>
+                  <p className="text-gray-600">Kigali, Nyarugenge</p>
+                  <p className="text-gray-600">Kigali Rwanda</p>
                 </div>
                 <div className="pt-4 border-t border-sky-200">
                   <h4 className="font-semibold text-gray-900 mb-2">Office Hours:</h4>
