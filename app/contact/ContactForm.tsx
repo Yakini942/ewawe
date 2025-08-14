@@ -26,19 +26,12 @@ export default function ContactForm() {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('https://formsubmit.co/contact@ewawe.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
-          name: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-        }),
-      });
-
+      const response = await fetch('/api/contact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+          });
+          
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ fullName: '', email: '', phone: '', message: '' });
@@ -53,16 +46,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
-      {/* Floating Ship */}
-      <div className="absolute bottom-20 right-12 w-16 h-12 opacity-20 animate-bounce">
-        <img 
-          src="https://readdy.ai/api/search-image?query=small%20cargo%20ship%20icon%20sailing%20on%20calm%20waters%2C%20minimal%20flat%20design%20with%20sky%20blue%20colors%2C%20simple%20geometric%20shape%20for%20shipping%20company%20branding&width=64&height=48&seq=ship3&orientation=landscape" 
-          alt="Ship decoration"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
+    <section className="py-20 bg-white relative overflow-hidden">      
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
