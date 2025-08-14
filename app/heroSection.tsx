@@ -40,16 +40,15 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="space-y-8 text-left z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               With Ewawe Shippers Limited
             </h1>
-            <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800'>
+            <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white'>
               Global Shipping Made Easy
             </h2>
-            <p className="text-lg md:text-xl text-gray-700">
+            <p className="text-lg md:text-xl text-white">
               Fast, reliable, and affordable shipping solutions tailored for you.
             </p>
-          
             <div className="bg-white/30 backdrop-blur-sm rounded-full p-6 p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
