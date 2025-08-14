@@ -16,8 +16,7 @@ export default function homepage() {
   const [loading, setLoading] = useState(true);
 
    useEffect(() => {
-    // Simulate loading for 2 seconds
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
