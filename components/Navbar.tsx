@@ -17,7 +17,7 @@ export default function Navbar() {
               </Link>
             </div>
           {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center px-12 py-4 space-x-8  bg-gradient-to-r from-sky-400 to-blue-600 text-white px-6 py-2 rounded-full shadow-lg cursor-pointer whitespace-nowrap text-center">
+            <div className="hidden md:flex bg-gradient-to-r from-sky-400 to-blue-600 text-white px-6 py-2 rounded-full shadow-lg cursor-pointer whitespace-nowrap text-center">
             <Link href="/" className="text-white hover:underline">
               Home
             </Link>

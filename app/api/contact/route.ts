@@ -1,28 +1,40 @@
-// app/api/contact/route.ts
 import nodemailer from 'nodemailer';
-import { NextResponse } from 'next/server';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-export async function POST(req: Request) {
-  const { fullName, email, phone, message } = await req.json();
+export default async function handler( 
+  req: NextApiRequest,
+  res: NextApiResponse) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const { fullName, email, phone, message } = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD,
-      },
+        pass: process.env.GMAIL_PASS
+      }
     });
 
     await transporter.sendMail({
-      from: email,
-      to: process.env.GMAIL_USER,
+      from: process.env.GMAIL_USER, // always send from your Gmail
+      replyTo: email,               // reply-to is the user's email
+      to: process.env.GMAIL_USER,   // where you want to receive it
       subject: `Contact Form Message from ${fullName}`,
-      text: `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      text: `
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Message: ${message}
+      `
     });
 
-    return NextResponse.json({ message: 'Email sent successfully' });
+    return res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
-    return NextResponse.json({ error: 'Email sending failed' }, { status: 500 });
+    console.error(error);
+    return res.status(500).json({ error: 'Email sending failed' });
   }
 }
