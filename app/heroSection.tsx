@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-  'https://images.unsplash.com/photo-1590608897129-79db0f9e3d36?auto=format&fit=crop&w=1350&q=80', // cargo ship
-  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80', // sea/ocean
-  'https://images.unsplash.com/photo-1602524810005-92f0f1c78f7a?auto=format&fit=crop&w=1350&q=80', // shipping containers
+'/hero/ship.jpg',
+'/hero/plane.jpg',
+'/hero/ship.jpg'
 ];
 
 export default function HeroSection() {
@@ -35,7 +35,7 @@ export default function HeroSection() {
         ))}
         <div className="absolute inset-0 bg-gradient-to-br from-sky-100/30 to-blue-200/30" />
       </div>
-
+      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
