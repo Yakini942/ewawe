@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="col-span-1">
             <Link href="/" className="cursor-pointer">
               <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
-                Ewawe
+                ESL
               </span>
             </Link>
             <p className="text-gray-400 mt-4">
