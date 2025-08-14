@@ -47,7 +47,7 @@ export default function HeroSection() {
               Global Shipping Made Easy
             </h2>
             <p className="text-lg md:text-xl text-white">
-              Fast, reliable, affordable.
+              FAST, RELIABLE & AFFORDABLE
             </p>
             <div className="bg-white/30 backdrop-blur-sm rounded-full p-6 p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
