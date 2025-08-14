@@ -1,28 +1,34 @@
 'use client';
 
 import Link from 'next/link';
+import Head from 'next/head';
 import { useState } from 'react';
 import HeroSection from './heroSection';
 import Testimonials from './Testimonials';
 import PartnerMarquee from './PartnerMarquee';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 export default function homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-return (
-    <div className="min-h-screen bg-white">
-      {/* Sticky Navbar */}
+return (    
+<>
+    
+  <Navbar />
+   {/* Head section for SEO and favicon 
+  <div className="min-h-screen bg-offwhite">
+      {/* Sticky Navbar 
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* Logo 
             <div className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
                 Ewawe
               </span>
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation 
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 Home
@@ -47,7 +53,7 @@ return (
               </Link>
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile menu button 
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -61,7 +67,7 @@ return (
             </div>
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation 
           {isMenuOpen && (
             <div className="md:hidden bg-white border-t border-gray-100">
               <div className="px-2 pt-2 pb-3 space-y-1">
@@ -92,10 +98,10 @@ return (
             </div>
           )}
         </div>
-      </nav>
+      </nav>*/}
 
       {/* Hero Section */}
-      <HeroSection/>
+      <HeroSection />
 
       {/* Introduction Section */}
       <section className="py-20 bg-white">
@@ -106,40 +112,39 @@ return (
                 Welcome to Ewawe Shipping
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                We are your trusted partner in global shipping, connecting you to the world's best products. 
-                With our extensive network spanning USA, China, Dubai, Turkey, India, Germany, and Japan, 
+                We are your trusted partner in global shipping, connecting you to the world's best products.
+                With our extensive network spanning USA, China, Dubai, Turkey, India, Germany, and Japan,
                 we make international shopping simple and affordable.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                From small personal items to bulk orders, our team handles every shipment with care and precision, 
+                From small personal items to bulk orders, our team handles every shipment with care and precision,
                 ensuring your products reach you safely and on time.
               </p>
             </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="https://readdy.ai/api/search-image?query=clean%20modern%20cargo%20airplane%20side%20view%2C%20minimal%20flat%20design%2C%20professional%20aviation%20logistics%2C%20blue%20and%20white%20color%20scheme%2C%20transparent%20background%20suitable%20for%20shipping%20company&width=400&height=300&seq=airplane1&orientation=landscape" 
+            <div className="flex justify-left lg:justify-end">
+              <img
+                src="/hero/plane.png"
                 alt="Cargo Airplane"
-                className="w-80 h-60 object-contain"
-              />
+                className="w-300 h-60" />
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Partner Marquee */}
       <PartnerMarquee />
-      
+
 
       {/* Services Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-sky-50 relative overflow-hidden">
         {/* Wave Background */}
         <div className="absolute inset-0 opacity-10">
           <svg className="absolute bottom-0 w-full h-32" viewBox="0 0 1200 120" fill="none">
-            <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="url(#wave-gradient)"/>
+            <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="url(#wave-gradient)" />
             <defs>
               <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#4FC3F7"/>
-                <stop offset="100%" stopColor="#0288D1"/>
+                <stop offset="0%" stopColor="#4FC3F7" />
+                <stop offset="100%" stopColor="#0288D1" />
               </linearGradient>
             </defs>
           </svg>
@@ -194,25 +199,22 @@ return (
       <section className="py-20 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
         {/* Floating Elements */}
         <div className="absolute top-20 right-10 w-20 h-20 opacity-5">
-          <img 
-            src="https://readdy.ai/api/search-image?query=minimalist%20globe%20with%20subtle%20meridian%20lines%20and%20dotted%20shipping%20routes%20connecting%20continents%2C%20clean%20design%2C%20professional%20logistics%20symbol&width=80&height=80&seq=globe1&orientation=squarish" 
+          <img
+            src="https://readdy.ai/api/search-image?query=minimalist%20globe%20with%20subtle%20meridian%20lines%20and%20dotted%20shipping%20routes%20connecting%20continents%2C%20clean%20design%2C%20professional%20logistics%20symbol&width=80&height=80&seq=globe1&orientation=squarish"
             alt="Globe decoration"
-            className="w-full h-full object-contain animate-pulse"
-          />
+            className="w-full h-full object-contain animate-pulse" />
         </div>
         <div className="absolute bottom-32 left-10 w-16 h-16 opacity-5">
-          <img 
-            src="https://readdy.ai/api/search-image?query=simple%20shipping%20package%20box%20icon%2C%20minimal%20flat%20design%2C%20professional%20logistics%20symbol%2C%20clean%20lines&width=64&height=64&seq=package1&orientation=squarish" 
+          <img
+            src="https://readdy.ai/api/search-image?query=simple%20shipping%20package%20box%20icon%2C%20minimal%20flat%20design%2C%20professional%20logistics%20symbol%2C%20clean%20lines&width=64&height=64&seq=package1&orientation=squarish"
             alt="Package decoration"
-            className="w-full h-full object-contain animate-pulse"
-          />
+            className="w-full h-full object-contain animate-pulse" />
         </div>
         <div className="absolute top-1/2 left-1/4 w-12 h-12 opacity-5">
-          <img 
-            src="https://readdy.ai/api/search-image?query=small%20airplane%20silhouette%20icon%2C%20minimal%20design%2C%20transportation%20symbol%2C%20clean%20and%20simple&width=48&height=48&seq=plane1&orientation=squarish" 
+          <img
+            src="https://readdy.ai/api/search-image?query=small%20airplane%20silhouette%20icon%2C%20minimal%20design%2C%20transportation%20symbol%2C%20clean%20and%20simple&width=48&height=48&seq=plane1&orientation=squarish"
             alt="Plane decoration"
-            className="w-full h-full object-contain animate-pulse"
-          />
+            className="w-full h-full object-contain animate-pulse" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -260,7 +262,7 @@ return (
         </div>
       </section>
 
-      <Testimonials/>
+      <Testimonials />
 
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-sky-400 to-blue-600 relative overflow-hidden">
@@ -278,8 +280,8 @@ return (
         </div>
       </section>
 
-    <footer/>
+      <footer />
       <Footer />
-    </div>
+    </>
   );
 }

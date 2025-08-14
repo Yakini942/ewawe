@@ -13,17 +13,15 @@ export default function LocationSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Map */}
-          <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.https://www.google.com/maps/place/Ewawe+Shippers+Ltd/@-1.9462227,29.7709322,49676m/data=!3m1!1e3!4m20!1m13!4m12!1m4!2m2!1d30.2155008!2d-1.9926927!4e1!1m6!1m2!1s0x19dca7b893f98e67:0x3919cfd812512842!2sEwawe+Shippers+Ltd,+1.94630%C2%B0+S,+30.05930%C2%B0+E,+KN+72+St,+Kigali!2m2!1d30.0593368!2d-1.9462259!3m5!1s0x19dca7b893f98e67:0x3919cfd812512842!8m2!3d-1.94Ewawe Shippers Ltd, 1.94630° S, 30.05930° E, KN 72 St, Kigali62259!4d30.0593368!16s%2Fg%2F11rq6rrl78?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3Doogle.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1372345206327!2d-74.00597098459418!3d40.71277507932883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e5b73c7%3A0x4c8d7bace8c7c3da!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1641234567890!5m2!1sen!2sus"
-              width="150%"
-              height="150%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Ewawe Office Location"
-            ></iframe>
+          <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-lg">    
+         <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2172.972260366668!2d30.0571038!3d-1.9455742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca7b893f98e67%3A0x3919cfd812512842!2sEwawe%20Shippers%20Ltd!5e1!3m2!1sen!2srw!4v1755171758994!5m2!1sen!2srw" 
+         width="150%" 
+         height="150%" 
+         loading="lazy" 
+        >
+         </iframe>
+            
           </div>
 
           {/* Address Information & Regional Offices Horizontal Layout */}

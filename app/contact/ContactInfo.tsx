@@ -53,8 +53,10 @@ export default function ContactInfo() {
                   <p className="text-sm text-gray-500">24/7 Instant Support</p>
                 </div>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors cursor-pointer whitespace-nowrap">
-                Chat Now
+              <button>
+              <a href="https://wa.me/+250787942486" className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors cursor-pointer whitespace-nowrap"
+                  >Chat Now
+                  </a>
               </button>
             </div>
           </div>

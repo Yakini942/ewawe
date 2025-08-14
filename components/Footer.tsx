@@ -4,16 +4,8 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-16 relative">
-      {/* Ship Silhouette */}
-      <div className="absolute top-8 right-8 w-12 h-8 opacity-20">
-        <img 
-          src="https://readdy.ai/api/search-image?query=tiny%20ship%20silhouette%20icon%2C%20minimal%20design%2C%20simple%20boat%20outline%2C%20maritime%20symbol&width=48&height=32&seq=ship1&orientation=landscape" 
-          alt="Ship decoration"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
+    <footer className="bg-[#154D71] text-white py-16 relative">
+      {/* Decorative Waves */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo Section */}
@@ -30,7 +22,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg text-[#E9E9E9] font-bold mb-4 ">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors cursor-pointer">About Us</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Blog</Link></li>
@@ -41,7 +33,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Services</h3>
+            <h3 className="text-lg text-[#E9E9E9] font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><span className="text-gray-400">Air Freight</span></li>
               <li><span className="text-gray-400">Sea Freight</span></li>
@@ -52,7 +44,7 @@ export default function Footer() {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Connect With Us</h3>
+            <h3 className="text-lg text-[#E9E9E9] font-bold mb-4">Connect With Us</h3>
             <div className="flex space-x-4 mb-4">
               <a href="https://wa.me/+250787942486" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors cursor-pointer" aria-label="WhatsApp">
                 <i className="ri-whatsapp-line text-white"></i>

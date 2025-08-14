@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-'/hero/ship.jpg',
-'/hero/plane.jpg',
-'/hero/ship.jpg'
+'/hero/hero1.jpg',
+'/hero/hero2.jpg',
+'/hero/hero3.jpg'
 ];
 
 export default function HeroSection() {
@@ -20,9 +20,9 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-sky-50 to-blue-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-r from-sky-200 to-blue-800 overflow-hidden">
       {/* Background slideshow */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-gradient-to-r from-sky-200 to-blue-800">
         {heroImages.map((src, index) => (
           <img
             key={index}
@@ -41,13 +41,16 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8 text-left z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Ship Your Favorite Products Worldwide
+              With Ewawe Shippers Limited
             </h1>
-            <p className="text-xl md:text-2xl text-blue-600 font-medium">
-              Fast, Affordable, Secure
+            <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800'>
+              Global Shipping Made Easy
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700">
+              Fast, reliable, and affordable shipping solutions tailored for you.
             </p>
-            
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-lg">
+          
+            <div className="bg-white/30 backdrop-blur-sm rounded-full p-6 p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="url"

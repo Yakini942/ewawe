@@ -9,6 +9,10 @@ const DEFAULT_PARTNERS: Partner[] = [
   { name: 'Amazon', href: 'https://www.amazon.com', src: '/partners/amazon.svg' },
   { name: 'AliExpress', href: 'https://www.aliexpress.com', src: '/partners/aliexpress.svg' },
   { name: 'Ebay', href: 'https://www.ebay.com', src: '/partners/ebay.svg' },
+  { name: 'Alibaba', href: 'https://www.alibaba.com', src: '/partners/alibaba.svg' },
+  { name: 'Nike', href: 'https://www.nike.com', src: '/partners/nike.svg' },
+  { name: 'Samsung', href: 'https://www.samsung.com', src: '/partners/samsung.svg' },
+  
  
 ];
 
@@ -17,7 +21,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
   const row = [...partners, ...partners, ...partners, ...partners, ...partners, ...partners ];
 
   return (
-    <section className="relative py-10 bg-white">
+    <section className=" py-10 bg-offwhite relative">
       <h2 className="sr-only">Our Partners</h2>
 
       {/* Edge fades */}
@@ -32,7 +36,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
                 <img
                   src={p.src}
                   alt={p.alt ?? `${p.name} logo`}
-                  className="h-10 w-auto opacity-90 group-hover:opacity-100 transition"
+                  className="h-12 w-auto opacity-80 group-hover:opacity-100 transition"
                   loading="lazy"
                 />
               </a>

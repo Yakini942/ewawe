@@ -20,8 +20,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ewawe Shipping Limited",
-  description: "Ewawe Shipping Limited",
+  title: "Ewawe Shippers Limited",
+  description: "Ewawe Shippers Limited",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({
