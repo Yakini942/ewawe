@@ -54,7 +54,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
           100% { transform: translateX(-50%); }
         }
         .marquee {
-          animation: marquee 22s linear infinite;
+          animation: marquee 10s linear infinite;
           display: flex;
           width: max-content;
         }

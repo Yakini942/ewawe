@@ -123,7 +123,7 @@ return (
             transition={{ duration: 1 }}
           >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Welcome to Ewawe Shipping
+                Welcome to Ewawe Shippers Limited
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 We are your trusted partner in global shipping, connecting you to the world's best products.
