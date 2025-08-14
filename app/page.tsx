@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import HeroSection from './heroSection';
@@ -8,9 +9,19 @@ import Testimonials from './Testimonials';
 import PartnerMarquee from './PartnerMarquee';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import Preloader from '@/components/Preloader';
 
 export default function homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+   useEffect(() => {
+    // Simulate loading for 2 seconds
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Preloader />;
 return (    
 <><Navbar />
    {/* Head section for SEO and favicon 
