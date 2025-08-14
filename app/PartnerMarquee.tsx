@@ -51,7 +51,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
         /* base speed: tweak 22s for faster/slower */
         @keyframes marquee {
           0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-20%); }
         }
         .marquee {
           animation: marquee 10s linear infinite;
