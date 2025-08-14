@@ -7,8 +7,6 @@ import CompanyOverview from './CompanyOverview';
 import OurStory from './OurStory';
 import OurValues from './OurValues';
 import GlobalReach from './GlobalReach';
-import TeamSection from './TeamSection';
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -18,7 +16,6 @@ export default function AboutPage() {
       <OurStory />
       <OurValues />
       <GlobalReach />
-      <TeamSection />
       <Footer />
     </div>
   );

@@ -51,7 +51,7 @@ export default function QuickHelp() {
             </Link>
             
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/+250787942486" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap"
