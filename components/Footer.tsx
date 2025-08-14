@@ -55,12 +55,12 @@ export default function Footer() {
               <a href="https://x.com/ewawe_ltd?s=21" className="w-10 h-10  rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="X (Twitter)">
                 <i className="ri-twitter-x-line text-white"></i>
               </a>
-              <a href="www.linkedin.com/in/ewawe-shippers-ltd-esl-a50703238" className="w-10 h-10  rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="Linkedin (Linkedin)">
-                <i className="ri-linkedin-box-line text-white"></i>
+              <a href="https://www.linkedin.com/in/ewawe-shippers-ltd-esl-a50703238" className="w-10 h-10  rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="Linkedin (Linkedin)">
+                <i className="ri-linkedin-line text-white"></i>
               </a>
                
               <a href="https://www.facebook.com/share/16gyShLx3N/?mibextid=wwXIfr" className="w-10 h-10  rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="Linkedin (Linkedin)">
-                <i className="ri-facebook-box-line text-white"></i>
+                <i className="ri-facebook-line text-white"></i>
               </a>
               
             </div>
