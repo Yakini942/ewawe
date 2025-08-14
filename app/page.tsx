@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import HeroSection from './heroSection';
 import Testimonials from './Testimonials';
@@ -12,9 +12,7 @@ import Navbar from '@/components/Navbar';
 export default function homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 return (    
-<>
-    
-  <Navbar />
+<><Navbar />
    {/* Head section for SEO and favicon 
   <div className="min-h-screen bg-offwhite">
       {/* Sticky Navbar 
@@ -108,6 +106,12 @@ return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 1 }}
+          >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Welcome to Ewawe Shipping
               </h2>
@@ -120,13 +124,22 @@ return (
                 From small personal items to bulk orders, our team handles every shipment with care and precision,
                 ensuring your products reach you safely and on time.
               </p>
+              </motion.div>
             </div>
+
+       <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1 }}
+          >  
             <div className="flex justify-left lg:justify-end">
               <img
                 src="/hero/plane.png"
                 alt="Cargo Airplane"
                 className="w-300 h-60" />
             </div>
+            </motion.div> 
           </div>
         </div>
       </section>
