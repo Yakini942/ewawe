@@ -54,13 +54,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Connect With Us</h3>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors cursor-pointer" aria-label="WhatsApp">
+              <a href="https://wa.me/+250787942486" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors cursor-pointer" aria-label="WhatsApp">
                 <i className="ri-whatsapp-line text-white"></i>
               </a>
-              <a href="#" className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer" aria-label="Instagram">
+              <a href="https://www.instagram.com/ewaweshippersltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer" aria-label="Instagram">
                 <i className="ri-instagram-line text-white"></i>
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="X (Twitter)">
+              <a href="https://x.com/ewawe_ltd?s=21" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer" aria-label="X (Twitter)">
                 <i className="ri-twitter-x-line text-white"></i>
               </a>
             </div>
