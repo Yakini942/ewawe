@@ -1,22 +1,39 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
-    const { fullName, email, message, phone } = await req.json();
+    const body = await req.json();
 
-    await resend.emails.send({
-      from: 'Your Name <onboarding@resend.dev>',
-      to: 'y.beni@gmail.com',
-      subject: `New message from ${fullName}`,
-      html: `<p>${message}</p><p>From: ${email}</p><p>Phone: ${phone}</p>`,
+    // Add your secret key from environment variables
+    const access_key = process.env.WEB3FORMS_ACCESS_KEY;
+    if (!access_key) {
+      return NextResponse.json({ error: 'Missing access key' }, { status: 500 });
+    }
+
+    // Prepare payload for Web3Forms
+    const payload = {
+      ...body,
+      access_key,
+    };
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(payload),
     });
 
-    return NextResponse.json({ success: true }, { status: 200 });
+    const data = await response.json();
+
+    if (data.success) {
+      return NextResponse.json({ success: true });
+    } else {
+      return NextResponse.json({ success: false, error: data.message }, { status: 400 });
+    }
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+    return NextResponse.json({ success: false, error: 'Internal Server Error' }, { status: 500 });
   }
 }
