@@ -8,15 +8,21 @@ export default function Navbar() {
 
   return (
     
-      <nav className="sticky top-0 z-50 bg-[#154D71] backdrop-blur-sm">
+      <nav className="sticky top-0 z-50 bg-[#0954DF] backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center">
+            <Link className="flex items-center" href={"/"}>
+            
+            <img
+              src="/icon.jpg"
+              alt="Ewawe Logo"
+              className="h-14 w-auto mr-2"
+            />
               <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
                 Ewawe
               </span>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -38,7 +44,7 @@ export default function Navbar() {
               <Link href="/contact" className="text-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 Contact
               </Link>
-              <Link href="/quote" className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap">
+              <Link href="/quote" className="bg-[#FFFDE7] text-[#0954DF] px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap">
                 Get Quote
               </Link>
             </div>
