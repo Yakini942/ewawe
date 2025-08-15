@@ -13,11 +13,10 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link className="flex items-center" href={"/"}>
-            
             <img
               src="/icon.jpg"
               alt="Ewawe Logo"
-              className="h-14 w-auto mr-2"
+              className="h-8 w-auto mr-2"
             />
               <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
                 Ewawe
