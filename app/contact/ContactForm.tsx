@@ -26,13 +26,28 @@ export default function ContactForm() {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('/api/contact', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(formData),
-          });
-          
-      if (response.ok) {
+      const data = new FormData();
+      data.append('name', formData.fullName);
+      data.append('email', formData.email);
+      data.append('phone', formData.phone);
+      data.append('message', formData.message);
+      data.append('access_key', 'bc045174-5b10-4858-b38e-7083a9700ce5'); // <-- Replace with actual key
+
+      const object = Object.fromEntries(data);
+      const json = JSON.stringify(object);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: json
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
         setSubmitStatus('success');
         setFormData({ fullName: '', email: '', phone: '', message: '' });
       } else {
@@ -46,7 +61,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">      
+    <section className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
@@ -133,13 +148,17 @@ export default function ContactForm() {
 
           {submitStatus === 'success' && (
             <div className="text-center p-4 bg-green-50 border border-green-200 rounded-lg">
-              <p className="text-green-700 font-semibold">Message sent successfully! We'll get back to you soon.</p>
+              <p className="text-green-700 font-semibold">
+                Message sent successfully! We'll get back to you soon.
+              </p>
             </div>
           )}
 
           {submitStatus === 'error' && (
             <div className="text-center p-4 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-red-700 font-semibold">Failed to send message. Please try again or contact us directly.</p>
+              <p className="text-red-700 font-semibold">
+                Failed to send message. Please try again or contact us directly.
+              </p>
             </div>
           )}
         </form>
