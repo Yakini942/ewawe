@@ -2,7 +2,7 @@
 
 export default function GlobalReach() {
   const countries = [
-    { name: 'United States', flag: '🇺🇸', routes: '1,000+ shipments' },
+    { name: 'United States', flag: '\u{1F1FA}\u{1F1F8}', routes: '1,000+ shipments' },
     { name: 'China', flag: '🇨🇳', routes: '700+ shipments' },
     { name: 'Dubai (UAE)', flag: '🇦🇪', routes: '500+ shipments' },
     { name: 'Turkey', flag: '🇹🇷', routes: '200+ shipments' },

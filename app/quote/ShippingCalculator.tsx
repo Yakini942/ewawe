@@ -431,8 +431,9 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                 <button
                   type="button"
                   onClick={handleProceedShipping}
-                  className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
-                >
+                  className="w-full bg-white text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 px-8 py-3 rounded-xl border border-sky-400 hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
+
+>
                   Proceed with Shipping
                 </button>
               </div>
