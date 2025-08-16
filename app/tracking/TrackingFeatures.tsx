@@ -72,7 +72,7 @@ export default function TrackingFeatures() {
 </Link>
 
 <Link 
-  href="https://wa.me/25078" 
+  href="https://wa.me/+25078794248678" 
   target="_blank" 
   className="border border-sky-400 text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-all duration-300 cursor-pointer whitespace-nowrap"
 >
