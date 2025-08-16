@@ -8,7 +8,7 @@ export default function ContactHero() {
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
           Get In Touch
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
           Have questions about shipping? Need a custom quote? Our friendly team is here to help you 
           with all your global shipping needs.
         </p>

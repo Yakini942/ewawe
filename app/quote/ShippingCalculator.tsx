@@ -128,7 +128,7 @@ export function ShippingCalculator() {
     // Get shipping rate based on origin
     const ratePerKg = getShippingRate(formData.origin)
     // Calculate shipping cost
-    const shippingCost = chargeableWeight * ratePerKg  // Converting USD to RWF (approximate)
+    const shippingCost = chargeableWeight * ratePerKg   
     // Calculate total cost (without product price)
     const totalCost = shippingCost
     // Calculate total with product price
@@ -146,7 +146,7 @@ export function ShippingCalculator() {
   }
   // Format currency
   const formatCurrency = (amount: number): string => {
-    return `RWF ${amount.toLocaleString('en-US', {
+    return `USD ${amount.toLocaleString('en-US', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     })}`
@@ -236,7 +236,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <span className="text-gray-500">RWF</span>
+                  <span className="text-gray-500">USD</span>
                 </div>
                 <input
                   type="text"
@@ -359,7 +359,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
               >
                 <option value="RW">Rwanda</option>
               </select>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-red mt-1">
                 Currently only shipping to Rwanda
               </p>
             </div>

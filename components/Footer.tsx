@@ -26,10 +26,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg text-[#E9E9E9] font-bold mb-4 ">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors cursor-pointer">About Us</Link></li>
-              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Blog</Link></li>
-              <li><Link href="/tracking" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Track Package</Link></li>
-              <li><Link href="/faqs" className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQs</Link></li>
+              <li><Link href="/about" className="text-white hover:text-gray-400 transition-colors cursor-pointer">About Us</Link></li>
+              <li><Link href="/contact" className="text-white hover:text-gray-400 transition-colors cursor-pointer">Contact Us</Link></li>
+              <li><Link href="/quote" className="text-white hover:text-gray-400 transition-colors cursor-pointer">Get a Quote</Link></li>
+              <li><Link href="/faqs" className="text-white hover:text-gray-400 transition-colors cursor-pointer">FAQs</Link></li>
             </ul>
           </div>
 

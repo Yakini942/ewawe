@@ -49,11 +49,10 @@ export default function HeroSection() {
             <p className="text-lg md:text-xl text-white">
               FAST, RELIABLE & AFFORDABLE
             </p>
-            <div className="bg-white/30 backdrop-blur-sm rounded-full p-6 p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
+                    className="bg-white text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 px-8 py-3 rounded-xl border border-sky-400 hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
                 >
                   Get in Touch
                 </Link>
@@ -63,7 +62,7 @@ export default function HeroSection() {
                 >
                   Get Quote
                 </Link>
-              </div>
+              
             </div>
           </div>
 

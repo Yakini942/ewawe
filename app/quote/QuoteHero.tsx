@@ -11,7 +11,7 @@ export default function QuoteHero() {
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Calculate Your Shipping Cost Instantly
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-blue-100 max-w-2xl mx-auto">
           Get transparent pricing for your international shipments. No hidden fees, no surprises - just honest, upfront costs.
         </p>
       </div>
