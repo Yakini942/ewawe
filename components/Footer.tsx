@@ -10,10 +10,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo Section */}
           <div className="col-span-1">
-            <Link href="/" className="cursor-pointer">
-              <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
-                ESL
-              </span>
+             <Link className="flex items-center" href={"/"}>
+            <img
+              src="/icon.jpg"
+              alt="Ewawe Logo"
+              className="h-14 w-auto mr-2 rounded-full"
+            />
             </Link>
             <p className="text-gray-400 mt-4">
               Your trusted partner in global shipping solutions.
@@ -35,10 +37,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg text-[#E9E9E9] font-bold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><span className="text-gray-400">Air Freight</span></li>
-              <li><span className="text-gray-400">Sea Freight</span></li>
-              <li><span className="text-gray-400">Customs Clearance</span></li>
-              <li><span className="text-gray-400">Warehousing</span></li>
+              <li><span className="text-white">Air Freight</span></li>
+              <li><span className="text-white">Sea Freight</span></li>
+              <li><span className="text-white">Customs Clearance</span></li>
+              <li><span className="text-white">Warehousing</span></li>
             </ul>
           </div>
 

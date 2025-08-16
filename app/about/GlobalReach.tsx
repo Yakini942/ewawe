@@ -2,13 +2,13 @@
 
 export default function GlobalReach() {
   const countries = [
-    { name: 'United States', flag: '🇺🇸', routes: '15,000+ shipments' },
-    { name: 'China', flag: '🇨🇳', routes: '12,000+ shipments' },
-    { name: 'Dubai (UAE)', flag: '🇦🇪', routes: '8,500+ shipments' },
-    { name: 'Turkey', flag: '🇹🇷', routes: '6,200+ shipments' },
-    { name: 'India', flag: '🇮🇳', routes: '9,800+ shipments' },
-    { name: 'Germany', flag: '🇩🇪', routes: '7,400+ shipments' },
-    { name: 'Japan', flag: '🇯🇵', routes: '5,900+ shipments' }
+    { name: 'United States', flag: '🇺🇸', routes: '1,000+ shipments' },
+    { name: 'China', flag: '🇨🇳', routes: '700+ shipments' },
+    { name: 'Dubai (UAE)', flag: '🇦🇪', routes: '500+ shipments' },
+    { name: 'Turkey', flag: '🇹🇷', routes: '200+ shipments' },
+    { name: 'India', flag: '🇮🇳', routes: '100+ shipments' },
+    { name: 'Germany', flag: '🇩🇪', routes: '62+ shipments' },
+    { name: 'Japan', flag: '🇯🇵', routes: '45+ shipments' }
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function GlobalReach() {
               <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
             </div>
             <div className="text-center mt-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">50+ Countries Served</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">25+ Countries Served</h3>
               <p className="text-gray-600">Expanding our network every month</p>
             </div>
           </div>

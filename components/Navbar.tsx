@@ -28,12 +28,6 @@ export default function Navbar() {
               <Link href="/about" className="text-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 About
               </Link>
-              <Link href="/tracking" className="text-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
-                Tracking
-              </Link>
-              <Link href="/blog" className="text-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
-                Blog
-              </Link>
               <Link href="/faqs" className="text-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap">
                 FAQs
               </Link>
@@ -49,7 +43,7 @@ export default function Navbar() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-blue-600 cursor-pointer"
+                className="text-white hover:text-blue-600 cursor-pointer"
                 aria-label="Toggle menu"
               >
                 <div className="w-6 h-6 flex items-center justify-center">

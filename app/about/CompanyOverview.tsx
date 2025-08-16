@@ -40,10 +40,10 @@ export default function CompanyOverview() {
               </div>
               
               <div className="text-center">
-                <div className="text-6xl font-bold text-sky-500 mb-4">10k+</div>
+                <div className="text-6xl font-bold text-sky-500 mb-4">1.8k+</div>
                 <p className="text-xl text-gray-700 mb-6">Satisfied Customers</p>
                 
-                <div className="text-6xl font-bold text-blue-500 mb-4">50+</div>
+                <div className="text-6xl font-bold text-blue-500 mb-4">25+</div>
                 <p className="text-xl text-gray-700 mb-6">Countries Served</p>
                 
                 <div className="text-6xl font-bold text-sky-600 mb-4">99%</div>

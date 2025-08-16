@@ -51,11 +51,12 @@ export default function HeroSection() {
             </p>
             <div className="bg-white/30 backdrop-blur-sm rounded-full p-6 p-6 shadow-lg border border-gray-100 max-w-lg">
               <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="url"
-                  placeholder="Paste your product link here..."
-                  className="flex-1 px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
-                />
+                <Link
+                  href="/contact"
+                  className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
+                >
+                  Get in Touch
+                </Link>
                 <Link
                   href="/quote"
                   className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"

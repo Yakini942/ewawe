@@ -21,30 +21,44 @@ export default function ContactForm() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  setSubmitStatus('');
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('');
 
-  try {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const data = new FormData();
+      data.append('name', formData.fullName);
+      data.append('email', formData.email);
+      data.append('phone', formData.phone);
+      data.append('message', formData.message);
+      data.append('access_key', 'bc045174-5b10-4858-b38e-7083a9700ce5'); // <-- Replace with actual key
 
-    if (response.ok) {
-      setSubmitStatus('success');
-      setFormData({ fullName: '', email: '', phone: '', message: '' });
-    } else {
+      const object = Object.fromEntries(data);
+      const json = JSON.stringify(object);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: json
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({ fullName: '', email: '', phone: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
       setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch {
-    setSubmitStatus('error');
-  } finally {
-    setIsSubmitting(false);
-  }
-};
-
+  };
 
   return (
     <section className="py-20 bg-white relative overflow-hidden">

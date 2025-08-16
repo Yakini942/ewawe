@@ -11,16 +11,6 @@ export default function TrackingHero() {
           className="w-full h-full object-contain"
         />
       </div>
-
-      {/* Floating GPS Icon */}
-      <div className="absolute top-32 left-32 w-12 h-12 opacity-25 animate-pulse">
-        <img 
-          src="https://readdy.ai/api/search-image?query=GPS%20location%20tracking%20icon%20with%20navigation%20pin%2C%20modern%20flat%20design%20with%20sky%20blue%20colors%2C%20clean%20geometric%20symbol%20for%20shipment%20tracking%20systems&width=48&height=48&seq=gps1&orientation=squarish" 
-          alt="GPS tracking"
-          className="w-full h-full object-contain"
-        />
-      </div>
-
       {/* Floating Delivery Truck */}
       <div className="absolute bottom-20 left-16 w-20 h-12 opacity-20 animate-bounce">
         <img 

@@ -2,7 +2,7 @@
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-gradient-to-br from-sky-100 to-blue-50 py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-sky-400 via-blue-500 to-blue-600 py-20 overflow-hidden">
       {/* Floating Ship */}
       <div className="absolute top-10 right-20 w-16 h-12 opacity-30 animate-bounce">
         <img 
