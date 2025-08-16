@@ -64,20 +64,20 @@ export default function TrackingFeatures() {
               Can't find your package or having issues with tracking? Our support team is here to help you 24/7.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">          
-<Link 
-  href="/contact" 
-  className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap"
->
-  Contact Support
-</Link>
+                <Link 
+                    href="/contact" 
+                    className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap"
+                >
+                    Contact Support
+                </Link>
 
-<a
-  href="https://wa.me/+250787942486"
-  target="_blank" 
-  className="border border-sky-400 text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-all duration-300 cursor-pointer whitespace-nowrap"
->
-  Live Chat
-</a>
+                  <a
+                      href="https://wa.me/+250787942486"
+                      target="_blank" 
+                      className="border border-sky-400 text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-all duration-300 cursor-pointer whitespace-nowrap"
+                  >
+                        Live Chat
+                    </a>
             </div>
           </div>
         </div>
