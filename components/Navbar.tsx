@@ -18,9 +18,6 @@ export default function Navbar() {
               alt="Ewawe Logo"
               className="h-14 w-auto mr-2 rounded-full"
             />
-              <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent font-pacifico">
-                Ewawe
-              </span>
             </Link>
 
             {/* Desktop Navigation */}
