@@ -17,7 +17,7 @@ export default function Footer() {
               className="h-14 w-auto mr-2 rounded-full"
             />
             </Link>
-            <p className="text-gray-400 mt-4">
+            <p className="text-white mt-4">
               Your trusted partner in global shipping solutions.
             </p>
           </div>
@@ -66,14 +66,14 @@ export default function Footer() {
               </a>
               
             </div>
-            <Link href="/contact" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+            <Link href="/contact" className="text-white hover:text-white transition-colors cursor-pointer">
               Contact Us
             </Link>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
+          <p className="text-white text-sm">
             © 2024 Ewawe Shippers Limited. All rights reserved.
           </p>
         </div>

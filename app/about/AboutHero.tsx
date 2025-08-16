@@ -31,7 +31,7 @@ export default function AboutHero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-          About Ewawe
+          About ESL
         </h1>
         <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
           Connecting the world through reliable, fast, and affordable shipping solutions. 

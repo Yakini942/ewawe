@@ -225,6 +225,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                 className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                 placeholder="https://example.com/product"
                 aria-label="Product link URL"
+                required
               />
             </div>
             <div className="mb-4">
@@ -246,7 +247,8 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                   onChange={handleInputChange}
                   className="block w-full pl-14 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                   placeholder="0.00"
-                  aria-label="Product price in RWF"
+                  aria-label="Product price in USD"
+                  required
                 />
               </div>
             </div>
@@ -268,6 +270,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                 min="0"
                 step="0.01"
                 aria-label="Weight in kilograms"
+                required
               />
             </div>
             <div className="mb-4">
@@ -287,6 +290,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                     min="0"
                     step="0.1"
                     aria-label="Length in centimeters"
+                    required
                   />
                 </div>
                 <div>
@@ -301,6 +305,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                     min="0"
                     step="0.1"
                     aria-label="Width in centimeters"
+                    required
                   />
                 </div>
                 <div>
@@ -315,6 +320,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                     min="0"
                     step="0.1"
                     aria-label="Height in centimeters"
+                    required
                   />
                 </div>
               </div>

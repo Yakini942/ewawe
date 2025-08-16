@@ -36,9 +36,9 @@ export default function LocationSection() {
               <div className="space-y-4">
                 <div>
                   <p className="text-lg font-semibold text-gray-900">Ewawe Shippers Limited</p>
+                  <p className="text-gray-600">Eden tower 2nd floor, near Makuza peace plaza</p>
                   <p className="text-gray-600">KN 72 street kigali Rwanda</p>
-                  <p className="text-gray-600">Kigali, Nyarugenge</p>
-                  <p className="text-gray-600">Kigali Rwanda</p>
+                  <p className="text-gray-600">Kigali, Rwanda</p>
                 </div>
                 <div className="pt-4 border-t border-sky-200">
                   <h4 className="font-semibold text-gray-900 mb-2">Office Hours:</h4>

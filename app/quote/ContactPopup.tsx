@@ -163,7 +163,7 @@ export default function ContactPopup({ showEmailForm, closePopup, formData, resu
         {/* Success/Error messages */}
         {submitStatus === 'success' && (
           <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg text-green-700">
-            Form submitted successfully!
+             submitted successfully!
           </div>
         )}
         {submitStatus === 'error' && (
