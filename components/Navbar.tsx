@@ -63,12 +63,6 @@ export default function Navbar() {
                 <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer">
                   About
                 </Link>
-                <Link href="/tracking" className="block px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer">
-                  Tracking
-                </Link>
-                <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer">
-                  Blog
-                </Link>
                 <Link href="/faqs" className="block px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer">
                   FAQs
                 </Link>
