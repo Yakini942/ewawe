@@ -71,13 +71,13 @@ export default function TrackingFeatures() {
   Contact Support
 </Link>
 
-<Link 
-  href="https://wa.me/+25078794248678" 
+<a
+  href="https://wa.me/+250787942486"
   target="_blank" 
   className="border border-sky-400 text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-sky-50 transition-all duration-300 cursor-pointer whitespace-nowrap"
 >
   Live Chat
-</Link>
+</a>
             </div>
           </div>
         </div>
