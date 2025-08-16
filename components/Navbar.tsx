@@ -14,7 +14,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link className="flex items-center" href={"/"}>
             <img
-              src="/icon.JPG"
+              src="/icon.jpg"
               alt="Ewawe Logo"
               className="h-14 w-auto mr-2 rounded-full"
             />
