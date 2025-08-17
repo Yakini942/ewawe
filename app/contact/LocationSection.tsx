@@ -7,7 +7,7 @@ export default function LocationSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Location</h2>
           <p className="text-lg text-gray-600">
-            Visit our headquarters or explore our global warehouse locations
+            Visit our headquarters or find us on the map
           </p>
         </div>
 
@@ -19,13 +19,14 @@ export default function LocationSection() {
               width="150%" 
               height="150%" 
               loading="lazy" 
-            ></iframe>
+            >
+            </iframe>
           </div>
 
           {/* Address Information */}
           <div className="space-y-8">
             {/* HQ */}
-            <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8">
+            <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8 mb-8">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-sky-400 to-blue-600 rounded-full flex items-center justify-center">
                   <i className="ri-map-pin-line text-white text-xl"></i>
@@ -34,16 +35,16 @@ export default function LocationSection() {
               </div>
               <div>
                 <p className="text-lg font-semibold text-gray-900">Ewawe Shippers Limited</p>
-                <p className="text-gray-600">Eden Tower 2nd floor, near Makuza Peace Plaza</p>
-                <p className="text-gray-600">KN 72 Street Kigali, Rwanda</p>
+                <p className="text-gray-600">Eden tower 2nd floor, near Makuza peace plaza</p>
+                <p className="text-gray-600">KN 72 street, Kigali, Rwanda</p>
               </div>
-              
+            </div>
 
-            {/* US + UK side by side */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            {/* US & UK Side by Side */}
+            <div className="grid md:grid-cols-2 gap-6">
               {/* US */}
-              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">US Warehouse</h3>
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">US Warehouse</h3>
                 <p className="text-gray-600">4283 Express Lane</p>
                 <p className="text-gray-600">Suite RW2056</p>
                 <p className="text-gray-600">Sarasota, FL 34249</p>
@@ -51,8 +52,8 @@ export default function LocationSection() {
               </div>
 
               {/* UK */}
-              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">UK Warehouse</h3>
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">UK Warehouse</h3>
                 <p className="text-gray-600">Suite RW2056</p>
                 <p className="text-gray-600">Unit 9, Skyport Drive</p>
                 <p className="text-gray-600">West Drayton, Middx UB7 0LB</p>
@@ -60,27 +61,25 @@ export default function LocationSection() {
               </div>
             </div>
 
-            {/* China (Air & Water in two columns) */}
+            {/* China */}
             <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">China Warehouses</h3>
-              <div className="grid sm:grid-cols-2 gap-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">China Warehouse</h3>
+              <div className="grid md:grid-cols-2 gap-6">
                 {/* By Air */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">By Air</h4>
                   <p className="text-gray-600">First Floor, Building 2, Dezhong Science and Technology Park</p>
-                  <p className="text-gray-600">No. 45 Qilinling Road, Tangxia, Dongguan</p>
-                  <p className="text-gray-600">Guangdong</p>
-                  <p className="text-gray-600">Contact: Miss Zou 18124516942</p>
+                  <p className="text-gray-600">No. 45 Qilinling Road, Tangxia, Dongguan, Guangdong</p>
+                  <p className="text-gray-600">Contact: Miss Zou</p>
+                  <p className="text-gray-600">Tel: 18124516942</p>
                   <p className="text-gray-600">ID: 136954</p>
                 </div>
-
                 {/* By Water */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">By Water</h4>
-                  <p className="text-gray-600">Finished Products Warehouse A8</p>
+                  <p className="text-gray-600">Finished products warehouse A8</p>
                   <p className="text-gray-600">Herusha Market, Lishui Town</p>
-                  <p className="text-gray-600">Nanhai District, Foshan City</p>
-                  <p className="text-gray-600">Guangdong Province</p>
+                  <p className="text-gray-600">Nanhai District, Foshan City, Guangdong Province</p>
                 </div>
               </div>
             </div>
