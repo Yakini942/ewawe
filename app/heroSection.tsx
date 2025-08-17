@@ -1,74 +1,139 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const heroImages = [
-'/hero/hero1.jpg',
-'/hero/hero2.jpg',
-'/hero/hero3.jpg'
+type Slide = {
+  image: string;
+  title: string;
+  subtitle: string;
+  text: string;
+};
+
+const slides: Slide[] = [
+  {
+    image: '/hero/hero1.jpg',
+    title: 'With Ewawe Shippers Limited',
+    subtitle: 'Global Shipping Made Easy',
+    text: 'FAST, RELIABLE & AFFORDABLE',
+  },
+  {
+    image: '/hero/hero2.JPG',
+    title: '',
+    subtitle: '',
+    text: '',
+  },
+  {
+    image: '/hero/hero3.JPG',
+    title: '',
+    subtitle: '',
+    text: '',
+  },
+  {
+    image: '/hero/hero4.jpg',
+    title: 'Get your Order',
+    subtitle: 'Or your Money Back',
+    text: 'Shop confidently with ESL Money Back Guarantee',
+  },
 ];
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
+  const currentSlide = slides[current];
+  const isFirstSlide = current === 0;
+  const isLastSlide = current === slides.length - 1;
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroImages.length);
+      setCurrent((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-r from-sky-200 to-blue-800 overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background slideshow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-sky-200 to-blue-800">
-        {heroImages.map((src, index) => (
-          <img
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
             key={index}
-            src={src}
-            alt={`Hero slide ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
               index === current ? 'opacity-100' : 'opacity-0'
             }`}
+          >
+            <img
+              src={slide.image}
+              alt={`${slide.title} - ${slide.subtitle}`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-sky-100/30 to-blue-200/30" />
+          </div>
+        ))}
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-[80vh] flex items-center">
+        <div className="max-w-3xl space-y-8 text-left z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            {currentSlide.title}
+          </h1>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
+            {currentSlide.subtitle}
+          </h2>
+          <p className="text-lg md:text-xl text-white">{currentSlide.text}</p>
+
+          {/* Show CTA only on first and last slides */}
+          {(isFirstSlide || isLastSlide) && (
+            <div className={`flex flex-wrap gap-4 mt-6 ${isLastSlide ? 'justify-end' : ''}`}>
+              {isFirstSlide ? (
+                <>
+                  <Link
+                    href="/register"
+                    className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer font-medium"
+                  >
+                    Get Started
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="border border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium"
+                  >
+                    Learn More
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    href="/register"
+                    className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer font-medium"
+                  >
+                    Get Started
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="border border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium"
+                  >
+                    Learn More
+                  </Link>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Navigation dots */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-3 h-3 rounded-full transition-all ${
+              index === current
+                ? 'bg-white scale-125'
+                : 'bg-white/50 hover:bg-white/80'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-100/30 to-blue-200/30" />
-      </div>
-      
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-          {/* Left Content */}
-          <div className="space-y-8 text-left z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              With Ewawe Shippers Limited
-            </h1>
-            <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white'>
-              Global Shipping Made Easy
-            </h2>
-            <p className="text-lg md:text-xl text-white">
-              FAST, RELIABLE & AFFORDABLE
-            </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/contact"
-                    className="bg-white text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 px-8 py-3 rounded-xl border border-sky-400 hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
-                >
-                  Get in Touch
-                </Link>
-                <Link
-                  href="/quote"
-                  className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
-                >
-                  Get Quote
-                </Link>
-              
-            </div>
-          </div>
-
-          {/* Optional Right Image */}
-          <div className="relative z-10" />
-        </div>
       </div>
     </section>
   );
