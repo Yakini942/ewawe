@@ -28,7 +28,7 @@ export function ShippingCalculator() {
     length: '',
     width: '',
     height: '',
-    destination: 'RW',
+    destination: 'RW', // Rwanda as default
     origin: 'US', // USA as default
   })
   const [results, setResults] = useState<CalculationResults>({
@@ -81,9 +81,7 @@ export function ShippingCalculator() {
   ]
   // List of countries with ISO codes
   const countries = [
-    {
-    code: 'AF', 
-    name: 'Afghanistan' },
+      {code: 'AF', name: 'Afghanistan' },
       { code: 'AL', name: 'Albania' },
       { code: 'DZ', name: 'Algeria' }, 
       { code: 'AS', name: 'American Samoa' }, 
@@ -513,13 +511,14 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                 onChange={handleInputChange}
                 className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                 aria-label="Shipping destination country"
-                disabled
               >
-                <option value="RW">Rwanda</option>
+                {countries.map((country) => (
+                  <option key={country.code} value={country.code}>
+                    {country.name} 
+                  </option>
+                ))}
               </select>
-              <p className="text-xs text-red mt-1">
-                Currently only shipping to Rwanda
-              </p>
+              
             </div>
             <div className="mt-6">
               <button
