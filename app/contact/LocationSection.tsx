@@ -37,13 +37,7 @@ export default function LocationSection() {
                 <p className="text-gray-600">Eden Tower 2nd floor, near Makuza Peace Plaza</p>
                 <p className="text-gray-600">KN 72 Street Kigali, Rwanda</p>
               </div>
-              <div className="pt-4 border-t border-sky-200 mt-4">
-                <h4 className="font-semibold text-gray-900 mb-2">Office Hours:</h4>
-                <p className="text-gray-600">Mon - Fri: 9:00 AM - 5:00 PM</p>
-                <p className="text-gray-600">Sat: 9:00 AM - 1:00 PM</p>
-                <p className="text-gray-600">Sun: Closed</p>
-              </div>
-            </div>
+              
 
             {/* US + UK side by side */}
             <div className="grid sm:grid-cols-2 gap-6">
