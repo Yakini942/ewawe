@@ -67,23 +67,23 @@ export default function ContactInfo() {
               <div className="w-12 h-12 bg-gradient-to-r from-sky-400 to-blue-600 rounded-full flex items-center justify-center">
                 <i className="ri-time-line text-white text-xl"></i>
               </div>
-              <h3 className="text-lg font-bold text-gray-900">Support Hours</h3>
+              <h3 className="text-lg font-bold text-gray-900">Office Hours</h3>
             </div>
             <div className="space-y-2 ml-16">
               <div className="flex justify-between">
                 <span className="text-gray-600">Monday - Friday:</span>
-                <span className="font-semibold text-gray-900">8:00 AM - 8:00 PM</span>
+                <span className="font-semibold text-gray-900">9:00 AM - 5:00 PM</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Saturday:</span>
-                <span className="font-semibold text-gray-900">10:00 AM - 6:00 PM</span>
+                <span className="font-semibold text-gray-900">:900 AM - 1:00 PM</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Sunday:</span>
                 <span className="font-semibold text-gray-900">Closed</span>
               </div>
               <div className="text-sm text-sky-600 mt-3">
-                * WhatsApp support available 24/7
+              <span className="text-red mt-3">*</span> WhatsApp support available 24/7
               </div>
             </div>
           </div>
