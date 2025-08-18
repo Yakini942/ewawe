@@ -27,7 +27,6 @@ return (
 <>
 <div className="min-h-screen bg-white">
 <Navbar />
-   
       {/* Hero Section */}
       <div className="hidden sm:block">
         <HeroSection />
