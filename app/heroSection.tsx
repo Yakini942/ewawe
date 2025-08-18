@@ -51,7 +51,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen pt-16 overflow-hidden" >
       {/* Background slideshow */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
