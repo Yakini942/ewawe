@@ -22,7 +22,7 @@ export default function ContactInfo() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">Email Us</h3>
-                <Link href="" className="text-gray-600">support@ewawe.com</Link>
+                <Link href="mailto:info@ewaweshippersltd.com" className="text-gray-600">info@ewaweshippersltd.com</Link>
                 <p className="text-sm text-gray-500">We respond within 2-4 hours</p>
               </div>
             </div>
