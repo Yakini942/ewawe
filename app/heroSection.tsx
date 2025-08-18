@@ -18,13 +18,13 @@ const slides: Slide[] = [
     text: 'FAST, RELIABLE & AFFORDABLE',
   },
   {
-    image: '/hero/hero2.JPG',
+    image: '/hero/hero2.jpg',
     title: '',
     subtitle: '',
     text: '',
   },
   {
-    image: '/hero/hero3.JPG',
+    image: '/hero/hero3.jpg',
     title: '',
     subtitle: ' ',
     text: '',
