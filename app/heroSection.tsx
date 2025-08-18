@@ -26,7 +26,7 @@ const slides: Slide[] = [
   {
     image: '/hero/hero3.JPG',
     title: '',
-    subtitle: '',
+    subtitle: ' ',
     text: '',
   },
   {
