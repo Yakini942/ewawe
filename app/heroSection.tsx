@@ -62,10 +62,11 @@ export default function HeroSection() {
             }`}
           >
             <img
-              src={slide.image}
-              alt={`${slide.title} - ${slide.subtitle}`}
-              className="w-full h-full object-cover"
-            />
+                src={slide.image}
+                alt={`${slide.title} - ${slide.subtitle}`}
+                className="w-full h-full object-contain sm:object-cover"
+              />
+
             <div className="absolute inset-0 bg-gradient-to-br from-sky-900/40 to-blue-900/40 sm:from-sky-100/30 sm:to-blue-200/30" />
           </div>
         ))}
