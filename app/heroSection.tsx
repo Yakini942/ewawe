@@ -12,7 +12,7 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    image: '/hero/slide 1.jpg',
+    image: '/hero/Slide 1.jpg',
     title: '',
     subtitle: '',
     text: '',
