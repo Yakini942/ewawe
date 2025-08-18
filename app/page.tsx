@@ -7,6 +7,7 @@ import { useState } from 'react';
 import HeroSection from './heroSection';
 import Testimonials from './Testimonials';
 import PartnerMarquee from './PartnerMarquee';
+import HeroSectionMobile from './herosectionmobile'; 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Preloader from '@/components/Preloader';
@@ -28,7 +29,12 @@ return (
 <Navbar />
    
       {/* Hero Section */}
-      <HeroSection />
+      <div className="hidden sm:block">
+        <HeroSection />
+      </div>
+      <div className="block sm:hidden">
+        <HeroSectionMobile />
+      </div>
 
       {/* Introduction Section */}
       <section className="py-20 bg-white">

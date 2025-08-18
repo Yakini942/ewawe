@@ -1,5 +1,7 @@
 'use client';
 
+import { Link } from "lucide-react";
+
 export default function ContactInfo() {
   return (
     <section className="py-20 bg-gradient-to-br from-sky-50 to-blue-100 relative overflow-hidden">
@@ -20,7 +22,7 @@ export default function ContactInfo() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">Email Us</h3>
-                <p className="text-gray-600">support@ewawe.com</p>
+                <Link href="" className="text-gray-600">support@ewawe.com</Link>
                 <p className="text-sm text-gray-500">We respond within 2-4 hours</p>
               </div>
             </div>
