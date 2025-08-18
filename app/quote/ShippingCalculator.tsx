@@ -549,12 +549,6 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Shipping Cost:</span>
-                  <span className="font-medium">
-                    {formatCurrency(results.shippingCost)}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-600">Product Price:</span>
                   <span className="font-medium">
                     {formatCurrency(parseFloat(formData.productPrice) || 0)}
