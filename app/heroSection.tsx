@@ -30,7 +30,7 @@ const slides: Slide[] = [
     text: 'Shop confidently with ESL Money Back Guarantee',
   },
   {
-    image: '/hero/slide 4.png',
+    image: '/hero/slide 4.jpgcv',
     title: 'Ewawe Shippers Limited',
     subtitle: 'Global Shipping Made Easy',
     text: 'FAST, RELIABLE & AFFORDABLE',
