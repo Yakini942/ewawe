@@ -12,19 +12,19 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           id: 1,
           name: 'John Bahufite',
           quote: 'eWawe Shippers Ltd provided excellent service. My package arrived on time and in perfect condition.',
-          photo: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=64&q=80',
+          photo: '/user.jpg',
         },
         {
           id: 2,
           name: 'Jane Hakuziyaremye',
           quote: 'Highly recommend eWawe Shippers Ltd for their reliable and fast shipping.',
-          photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&q=80',
+          photo: '/user.jpg',
         },
         {
           id: 3,
           name: 'Johnson Kay',
           quote: 'Great customer service and timely delivery. Will use again.',
-          photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=64&q=80',
+          photo: '/user.jpg',
         },
       ];
 
