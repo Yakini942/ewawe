@@ -67,11 +67,11 @@ return (
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
           >  
-            <div className="flex justify-left lg:justify-end">
+            <div className="relative justify-center items-center flex">
               <img
                 src="/hero/man.png"
                 alt="Cargo Airplane"
-                className="w-35 h-41 border-b-4 border-blue-400 rounded-full p-4"/>
+                className="w-40 h-40 border-b-4 border-blue-400 rounded-full p-4"/>
             </div>
             </motion.div> 
           </div>

@@ -39,7 +39,7 @@ export default function HeroSectionMobile() {
   }, []);
 
   return (
-    <section className="relative w-full h-[60vh] sm:h-screen overflow-hidden pt-14">
+    <section className="relative w-full h-[60vh] min-h-screen overflow-hidden pt-14">
       {/* Background */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (

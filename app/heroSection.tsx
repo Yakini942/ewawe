@@ -73,7 +73,7 @@ export default function HeroSection() {
             </h2>
 
             {/* Text */}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed max-w-xl">
               {currentSlide.text}
             </p>
 
