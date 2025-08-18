@@ -22,8 +22,13 @@ export default function ContactInfo() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">Email Us</h3>
-                <Link href="mailto:info@ewaweshippersltd.com" className="text-gray-600">info@ewaweshippersltd.com</Link>
-                <p className="text-sm text-gray-500">We respond within 2-4 hours</p>
+                 <a
+                      href="mailto:info@ewaweshippersltd.com"
+                      className="text-gray-600 hover:text-blue-600 hover:underline"
+    >
+                  info@ewaweshippersltd.com
+                      </a>
+                <p className="text-sm text-gray-500">We respond within 15-30 min</p>
               </div>
             </div>
           </div>

@@ -71,7 +71,7 @@ return (
               <img
                 src="/hero/man.png"
                 alt="Cargo Airplane"
-                className="w-41 h-41 border-b-4 border-blue-400 rounded-full p-4"/>
+                className="w-35 h-41 border-b-4 border-blue-400 rounded-full p-4"/>
             </div>
             </motion.div> 
           </div>

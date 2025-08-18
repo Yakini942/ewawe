@@ -27,7 +27,7 @@ const slides: Slide[] = [
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const currentSlide = slides[current];
-  const isFirstSlide = current === 0;
+  const isFirstSlide = current === 2;
   const isLastSlide = current === slides.length - 1;
 
   useEffect(() => {

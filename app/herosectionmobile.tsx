@@ -28,7 +28,7 @@ const slides: Slide[] = [
 export default function HeroSectionMobile() {
   const [current, setCurrent] = useState(0);
   const currentSlide = slides[current];
-  const isSecondSlide = current === 1;
+  const isSecondSlide = current === 2;
   const isLastSlide = current === slides.length - 1;
 
   useEffect(() => {
