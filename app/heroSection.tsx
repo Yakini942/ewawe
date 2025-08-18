@@ -12,28 +12,28 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    image: '/hero/hero1.jpg',
-    title: 'With Ewawe Shippers Limited',
-    subtitle: 'Global Shipping Made Easy',
-    text: 'FAST, RELIABLE & AFFORDABLE',
-  },
-  {
-    image: '/hero/hero2.jpg',
+    image: '/hero/slide 1.jpg',
     title: '',
     subtitle: '',
     text: '',
   },
   {
-    image: '/hero/hero3.jpg',
+    image: '/hero/slide 2.jpg',
     title: '',
-    subtitle: ' ',
+    subtitle: '',
     text: '',
   },
   {
-    image: '/hero/hero4.jpg',
+    image: '/hero/slide 3.jpg',
     title: 'Get your Order',
     subtitle: 'Or your Money Back',
     text: 'Shop confidently with ESL Money Back Guarantee',
+  },
+  {
+    image: '/hero/slide 4.png',
+    title: 'Ewawe Shippers Limited',
+    subtitle: 'Global Shipping Made Easy',
+    text: 'FAST, RELIABLE & AFFORDABLE',
   },
 ];
 

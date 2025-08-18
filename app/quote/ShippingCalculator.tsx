@@ -583,9 +583,8 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                   type="button"
                   onClick={handleProceedShipping}
                   className="w-full bg-white text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600 px-8 py-3 rounded-xl border border-sky-400 hover:shadow-lg transition-all duration-300 cursor-pointer whitespace-nowrap font-medium text-center"
-
->
-                  Proceed with Shipping
+                >
+                  Confirm & Pay
                 </button>
               </div>
             </div>
