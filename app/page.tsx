@@ -22,9 +22,11 @@ export default function homepage() {
 
   if (loading) return <Preloader />;
 return (    
-<><Navbar />
-   
 
+<>
+<div className="min-h-screen bg-white">
+<Navbar />
+   
       {/* Hero Section */}
       <HeroSection />
 
@@ -43,7 +45,7 @@ return (
                 Welcome to Ewawe Shippers Limited
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                We are your trusted partner in globalshoping and shipping, connecting you to the world's best products.
+                We are your trusted partner in global shopping and shipping, connecting you to the world's best products.
                 With our extensive network spanning USA, China, Dubai, Turkey, India, Germany, and Japan,
                 we make international shopping simple and affordable.
               </p>
@@ -219,9 +221,9 @@ return (
           </Link>
         </div>
       </section>
-
-      <footer />
+      {/* Footer */}
       <Footer />
+    </div>
     </>
   );
 }

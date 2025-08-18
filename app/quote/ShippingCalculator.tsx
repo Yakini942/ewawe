@@ -563,21 +563,6 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
                   </span>
                 </div>
               </div>
-              <div className="mt-6 text-sm text-gray-500">
-                <p>
-                  * Shipping rate from{' '}
-                  {
-                    originCountries.find((c) => c.code === formData.origin)
-                      ?.name
-                  }
-                  : $
-                  {
-                    originCountries.find((c) => c.code === formData.origin)
-                      ?.rate
-                  }
-                  /kg
-                </p>
-              </div>
               <div className="mt-6">
                 <button
                   type="button"
@@ -599,7 +584,7 @@ Total Cost: ${formatCurrency(results.totalWithProductPrice)}`
               How would you like to proceed?
             </h3>
             <p className="text-gray-600 mb-6">
-              Choose your preferred contact method to continue with shipping.
+              Choose your preferred contact method to confirm and pay.
             </p>
             <div className="space-y-3">
               <button
