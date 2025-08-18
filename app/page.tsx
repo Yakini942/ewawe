@@ -64,9 +64,9 @@ return (
           >  
             <div className="flex justify-left lg:justify-end">
               <img
-                src="/hero/plane.png"
+                src="/hero/man.png"
                 alt="Cargo Airplane"
-                className="w-300 h-60" />
+                className="w-41 h-41 border-b-4 border-blue-400 rounded-full p-4"/>
             </div>
             </motion.div> 
           </div>
