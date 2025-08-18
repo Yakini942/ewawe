@@ -53,7 +53,7 @@ export default function HeroSection() {
               alt={`${slide.title} - ${slide.subtitle}`}
               className="w-full h-full object-cover object-center"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-sky-900/50 to-blue-900/50 md:from-sky-900/30 md:to-blue-900/30" />
+            <div className="absolute inset-0 30 " />
           </div>
         ))}
       </div>
