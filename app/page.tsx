@@ -13,7 +13,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Preloader from '@/components/Preloader';
 
-export default function homepage() {
+export default function Homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
