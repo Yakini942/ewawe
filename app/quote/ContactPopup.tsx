@@ -34,10 +34,10 @@ export default function ContactPopup({ showEmailForm, closePopup, formData, resu
       // Include shipping/product details in the submission:
       data.append('productLink', formData.productLink);
       data.append('productPrice', formData.productPrice);
+      data.append('productweight', formData.productweight);
       data.append('length', formData.length);
       data.append('width', formData.width);
       data.append('height', formData.height);
-      data.append('shippingCost', results.shippingCost);
       data.append('totalCost', results.totalWithProductPrice);
 
       data.append('access_key', 'aa804cd0-df06-43d2-86f9-e53d705408f5'); // Replace with your real key
@@ -132,10 +132,10 @@ export default function ContactPopup({ showEmailForm, closePopup, formData, resu
               <div className="bg-gray-50 p-3 rounded text-sm">
                 <p><span className="font-medium">Product Link:</span> {formData.productLink}</p>
                 <p><span className="font-medium">Product Price:</span> {formatCurrency(parseFloat(formData.productPrice) || 0)}</p>
+                <p><span className="font-medium">Product weight:</span> {formatCurrency(parseFloat(formData.productweight) || 0)}</p>
                 <p><span className="font-medium">Length:</span> {formData.length}</p>
                 <p><span className="font-medium">Width:</span> {formData.width}</p>
                 <p><span className="font-medium">Height:</span> {formData.height}</p>
-                <p><span className="font-medium">Shipping Cost:</span> {formatCurrency(results.shippingCost)}</p>
                 <p><span className="font-medium">Total Cost:</span> {formatCurrency(results.totalWithProductPrice)}</p>
               </div>
             </div>

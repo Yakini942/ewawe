@@ -43,18 +43,18 @@ return (
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1 }}
           >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Welcome to Ewawe Shippers Limited
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-lg text-gray-600 text-justify leading-relaxed mb-8">
                 We are your trusted partner in global shopping and shipping, connecting you to the world's best products.
                 With our extensive network spanning USA, China, Dubai, Turkey, India, Germany, and Japan,
                 we make international shopping simple and affordable.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 text-justify leading-relaxed">
                 From small personal items to bulk orders, our team handles every shipment with care and precision,
                 ensuring your products reach you safely and on time.
               </p>
@@ -62,7 +62,7 @@ return (
             </div>
 
        <motion.div
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
@@ -71,7 +71,7 @@ return (
               <img
                 src="/hero/man.png"
                 alt="Cargo Airplane"
-                className="w-40 h-40 border-b-4 border-blue-400 rounded-full p-4"/>
+                className="w-45 h-90 border-b-4 border-blue-400 rounded-full p-4"/>
             </div>
             </motion.div> 
           </div>

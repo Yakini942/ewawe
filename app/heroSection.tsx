@@ -68,7 +68,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Subtitle */}
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-relaxed">
+            <h2 className="text-lg text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-relaxed">
               {currentSlide.subtitle}
             </h2>
 
