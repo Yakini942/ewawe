@@ -61,7 +61,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative h-full flex items-center">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl space-y-4 md:space-y-6 lg:space-y-8 text-left z-10">
+          <div className="max-w-3xl top-[40%] space-y-4 md:space-y-6 lg:space-y-8 text-left z-10">
             {/* Title */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
               {currentSlide.title}
