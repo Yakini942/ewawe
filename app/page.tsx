@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import HeroSectionMobile from './herosectionmobile';
 import HeroSection from './heroSection';
 import Testimonials from './Testimonials';
 import PartnerMarquee from './PartnerMarquee';
-import HeroSectionMobile from './herosectionmobile';
+
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Preloader from '@/components/Preloader';

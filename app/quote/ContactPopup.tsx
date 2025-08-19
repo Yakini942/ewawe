@@ -72,7 +72,7 @@ export default function ContactPopup({ showEmailForm, closePopup, formData, resu
   if (!showEmailForm) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-hidden" >
       <div className="bg-white p-6 rounded-lg shadow-xl max-w-md w-full">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Contact Information</h3>
 
@@ -132,7 +132,6 @@ export default function ContactPopup({ showEmailForm, closePopup, formData, resu
               <div className="bg-gray-50 p-3 rounded text-sm">
                 <p><span className="font-medium">Product Link:</span> {formData.productLink}</p>
                 <p><span className="font-medium">Product Price:</span> {formatCurrency(parseFloat(formData.productPrice) || 0)}</p>
-                <p><span className="font-medium">Product weight:</span> {formatCurrency(parseFloat(formData.productweight) || 0)}</p>
                 <p><span className="font-medium">Length:</span> {formData.length}</p>
                 <p><span className="font-medium">Width:</span> {formData.width}</p>
                 <p><span className="font-medium">Height:</span> {formData.height}</p>
