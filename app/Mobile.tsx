@@ -25,7 +25,7 @@ const slides: Slide[] = [
   },
 ];
 
-export default function HeroSectionMobile() {
+export default function Mobile() {
   const [current, setCurrent] = useState(0);
   const currentSlide = slides[current];
   const isSecondSlide = current === 2;

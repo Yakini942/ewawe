@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import HeroSectionMobile from './herosectionmobile';
+import Mobile from './Mobile';
 import HeroSection from './heroSection';
 import Testimonials from './Testimonials';
 import PartnerMarquee from './PartnerMarquee';
@@ -33,7 +33,7 @@ return (
         <HeroSection />
       </div>
       <div className="block sm:hidden">
-        <HeroSectionMobile />
+        <Mobile />
       </div>
 
       {/* Introduction Section */}
