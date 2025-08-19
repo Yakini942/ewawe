@@ -21,7 +21,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
   const row = [...partners, ...partners, ...partners, ...partners, ...partners, ...partners ];
 
   return (
-    <section className=" py-10 bg-offwhite relative">
+    <section className="bg-offwhite relative">
       <h2 className="sr-only">Our Partners</h2>
 
       {/* Edge fades */}
@@ -36,7 +36,7 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
                 <img
                   src={p.src}
                   alt={p.alt ?? `${p.name} logo`}
-                  className="h-12 w-auto opacity-80 group-hover:opacity-100 transition"
+                  className="h-[70px] w-auto opacity-80 group-hover:opacity-100 transition"
                   loading="lazy"
                 />
               </a>
@@ -51,12 +51,16 @@ export default function PartnerMarquee({ partners = DEFAULT_PARTNERS }: { partne
         /* base speed: tweak 22s for faster/slower */
         @keyframes marquee {
           0%   { transform: translateX(0); }
-          100% { transform: translateX(-20%); }
+          100% { transform: translateX(-15%); }
         }
         .marquee {
           animation: marquee 10s linear infinite;
           display: flex;
           width: max-content;
+        }
+        .marquee:hover, 
+        .marquee--2:hover {
+          animation-play-state: paused;
         }
         .marquee--2 {
           animation-delay: 11s; /* half the duration for perfect staggering */
