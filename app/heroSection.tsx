@@ -8,7 +8,7 @@ type Slide = {
 };
 
 const slides: Slide[] = [
-  { image: "/hero/Slide 1.jpg", title: "", subtitle: "", text: "" },
+  { image: "/hero/Slide 1.jpg", title: "   ", subtitle: "   ", text: " " },
   { image: "/hero/slide 2.jpg", title: "", subtitle: "", text: "" },
   {
     image: "/hero/slide 3.jpg",
@@ -78,16 +78,29 @@ export default function HeroSection() {
             </p>
 
             {/* Show CTA only on first and last slides */}
-            {(isFirstSlide || isLastSlide) && (
-              <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                <button className="w-full sm:w-auto bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
-                  Get Quote
-                </button>
-                <button className="w-full sm:w-auto border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
-                  Contact Us
-                </button>
+           {/* CTA only for Slide 1 */}
+          {isFirstSlide && (
+            <div className="absolute top-[35vh] px-50 flex gap-4 z-20">
+             <button className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
+               Get Quote
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
+                Contact Us
+               </button>
               </div>
             )}
+
+              {/* CTA only for Slide 4 */}
+                {isLastSlide && (
+                  <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <button className="w-full sm:w-auto bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
+                     Get Quote
+                 </button>
+                <button className="w-full sm:w-auto border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
+                 Contact Us
+                </button>
+                </div>
+                  )}
           </div>
         </div>
       </div>
