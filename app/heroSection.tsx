@@ -27,7 +27,7 @@ const slides: Slide[] = [
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
   const currentSlide = slides[current];
-  const isFirstSlide = current === 2;
+  const isFirstSlide = current === 0;
   const isLastSlide = current === slides.length - 1;
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[70vh] md:min-h-screen pt-16 overflow-hidden">
+    <section className="relative w-full min-h-[65vh] md:min-h-screen pt-16 overflow-hidden">
       {/* Background slideshow */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
