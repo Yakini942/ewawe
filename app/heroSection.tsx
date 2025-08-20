@@ -1,3 +1,6 @@
+'user client';
+
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 type Slide = {
@@ -81,24 +84,24 @@ export default function HeroSection() {
            {/* CTA only for Slide 1 */}
           {isFirstSlide && (
             <div className="absolute top-[35vh] px-50 flex gap-4 z-20">
-             <button className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
+             <Link href="/quote" className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
                Get Quote
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
+              </Link>
+              <Link href="/contact" className="border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
                 Contact Us
-               </button>
+               </Link>
               </div>
             )}
 
               {/* CTA only for Slide 4 */}
                 {isLastSlide && (
                   <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                <button className="w-full sm:w-auto bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
+                <Link href="/quote" className="w-full sm:w-auto bg-gradient-to-r from-sky-400 to-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-medium text-base">
                      Get Quote
-                 </button>
-                <button className="w-full sm:w-auto border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
+                 </Link>
+                <Link href="/contact" className="w-full sm:w-auto border-2 border-white text-white px-8 py-3 rounded-xl hover:bg-white hover:text-blue-700 transition-all duration-300 font-medium text-base">
                  Contact Us
-                </button>
+                </Link>
                 </div>
                   )}
           </div>
