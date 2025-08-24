@@ -9,7 +9,7 @@ type Slide = {
 };
 
 const slides: Slide[] = [
-  { image: "/hero/mslide 1.jpg", title: "", subtitle: "", text: "" },
+  { image: "/hero/Slide 1.jpg", title: "", subtitle: "", text: "" },
   { image: "/hero/slide 2.jpg", title: "", subtitle: "", text: "" },
   {
     image: "/hero/slide 3.jpg",
@@ -72,7 +72,7 @@ export default function Mobile() {
 
         {/* CTA Buttons */}
         {(isSecondSlide || isLastSlide) && (
-          <div className="flex flex-col gap-3 w-full max-w-xs">
+          <div className="flex flex-row gap-3 w-full max-w-xs">
             <Link
               href="/quote"
               className="bg-gradient-to-r from-sky-400 to-blue-600 text-white px-6 py-3 rounded-xl text-center font-medium"
