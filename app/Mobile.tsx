@@ -39,7 +39,7 @@ export default function Mobile() {
   }, []);
 
   return (
-    <section className="relative min-h-[40vh] min-h-screen overflow-hidden pt-14">
+    <section className="relative min-h-[40vh] overflow-hidden pt-14">
       {/* Background */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
