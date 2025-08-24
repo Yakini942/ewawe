@@ -53,7 +53,7 @@ export default function OurStory() {
                   <h3 className="text-2xl font-bold text-blue-600 mb-3">2021 - Global Expansion</h3>
                   <p className="text-gray-600">
                     Expanded our network to include major shipping routes from USA, China, Dubai, 
-                    and European markets. Served our first 1,000 customers.
+                    and European markets. Served our first 500 customers.
                   </p>
                 </div>
               </div>
@@ -65,8 +65,8 @@ export default function OurStory() {
                 <div className="bg-white rounded-xl p-6 shadow-lg">
                   <h3 className="text-2xl font-bold text-sky-600 mb-3">2022 - Technology Innovation</h3>
                   <p className="text-gray-600">
-                    Launched our advanced tracking system and mobile app. Introduced AI-powered 
-                    shipping cost calculator for instant quotes.
+                    Launched our advanced web based system shipping cost calculator that 
+                    helps customers to know their instant quotes.
                   </p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function OurStory() {
                 <div className="bg-white rounded-xl p-6 shadow-lg">
                   <h3 className="text-2xl font-bold text-blue-600 mb-3">2024 - Today & Beyond</h3>
                   <p className="text-gray-600">
-                    Now serving 10,000+ customers across 50+ countries with 99% on-time delivery. 
+                    Now serving 700+ customers across 35+ countries with 99% on-time delivery. 
                     Continuing to innovate and expand our global reach.
                   </p>
                 </div>

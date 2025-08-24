@@ -34,7 +34,7 @@ export default function LocationSection() {
                 <h3 className="text-2xl font-bold text-gray-900">Headquarters</h3>
               </div>
               <div>
-                <p className="text-lg font-semibold text-gray-900">Ewawe Shippers Limited</p>
+                <p className="text-lg font-semibold text-gray-900">Ewawe Shippers Ltd</p>
                 <p className="text-gray-600">Eden tower 2nd floor, near Makuza peace plaza</p>
                 <p className="text-gray-600">KN 72 street, Kigali, Rwanda</p>
               </div>
