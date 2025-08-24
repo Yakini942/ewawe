@@ -39,7 +39,7 @@ export default function Mobile() {
   }, []);
 
   return (
-    <section className="relative min-h-[40vh] overflow-hidden pt-14">
+    <section className="relative w-full min-h-[40vh] overflow-hidden pt-14">
       {/* Background */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -61,7 +61,7 @@ export default function Mobile() {
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-center items-center text-center pt-10">
+      <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
         <h1 className="text-2xl font-bold text-white leading-snug mb-2">
           {currentSlide.title}
         </h1>
